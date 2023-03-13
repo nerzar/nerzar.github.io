@@ -128,17 +128,14 @@
 <script>
 	var row = document.querySelector(".row");
 	var btns = document.querySelectorAll(".block");
-	//var number = 0;
-
-
 	// обрабатываем клики
 	document.onclick = function (e) {
 		var target = e.target;
 		//по блоку
 		if (target.className == 'block') {
 			var popContent = document.querySelector(".content");
-			var number = target.querySelector("span").innerText;
-			popContent.innerHTML = number;
+			var blockContent = target.innerHTML;
+			popContent.innerHTML = blockContent;
 		}
 		//по оверлею поп апа
 		if (target.className == 'overlay') {
