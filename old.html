@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	<title>Тестовое задание по HTML, js, css</title>
+
+	<style>
+		.row {
+			display: flex;
+			gap: 10px;
+			margin: 20px 0;
+		}
+
+		.block {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid red;
+			background-color: #fff;
+
+			flex-grow: 1;
+			min-height: 100px;
+		}
+
+		#checkbox:checked+.row .block:nth-child(even) {
+			background-color: gray;
+			color: white;
+			border: 1px solid gray;
+			transition: all .3s;
+		}
+
+		.overlay {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.7);
+			transition: visibility 0.5s linear, opacity 0.5s linear;
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.overlay:target {
+			visibility: visible;
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		.popup {
+			margin: 200px auto;
+			padding: 20px;
+			background: #fff;
+			border-radius: 5px;
+			width: 30%;
+			position: relative;
+
+
+		}
+
+		.content {
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			height: 200px;
+		}
+
+
+		.popup .close {
+			position: absolute;
+			top: 20px;
+			right: 30px;
+			transition: all 200ms;
+			font-size: 30px;
+			font-weight: bold;
+			text-decoration: none;
+			color: #333;
+		}
+
+		.popup .content {
+
+			overflow: auto;
+		}
+
+		@media screen and (max-width: 700px) {
+
+			.popup {
+				width: 80%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<input type="checkbox" name="checkbox" id="checkbox">
+
+	<div class="row">
+		<a class="block" href="#popup">
+			<span>1</span>
+		</a>
+		<a class="block" href="#popup">
+			<span>2</span>
+		</a>
+		<a class="block" href="#popup">
+			<span>3</span>
+		</a>
+		<a class="block" href="#popup">
+			<span>4</span>
+		</a>
+	</div>
+
+	<button class="button_add">Добавить блок</button>
+
+	<div id="popup" class="overlay">
+		<div class="popup">
+
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+	var row = document.querySelector(".row");
+	// обрабатываем клики
+	document.onclick = function (e) {
+		var target = e.target;
+		//по блоку
+		if (target.className == 'block') {
+			var popContent = document.querySelector(".content");
+			var blockContent = target.innerHTML;
+			popContent.innerHTML = blockContent;
+		}
+		//по оверлею поп апа
+		if (target.className == 'overlay') {
+			location.href = '/#';
+		}
+		//по  кнопке "добавить блок"
+		if (target.className == 'button_add') {
+			let len = document.querySelectorAll(".block").length;
+			row.innerHTML += '<a class="block" href="#popup" ><span>' + (+len + 1) + '</span></a> ';
+		}
+	}
+
+</script>
+
+</html>
