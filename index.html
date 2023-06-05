@@ -16,16 +16,18 @@
 
 <body>
 	<main>
-		<header class="p-4 bg-white text-dark fixed-top header">
-			<div class="container container-md-fluid container-sm-fluid">
+		<header class="p-3 p-md-4 bg-white text-dark fixed-top header">
+			<div class="container-lg ">
 				<div class="row">
-					<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+					<div
+						class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start p-0">
 						<a href="/"
-							class="d-flex align-items-center mb-2 col-lg-auto col-10 mb-lg-0  text-decoration-none header_logo-row col-sm-10">
+							class="d-flex align-items-center  col-lg-auto col-xs-auto col-md-6  mb-lg-0  text-decoration-none header_logo-row ">
 							<img src="/assets/img/jetour.png" alt="" class="me-4 pe-4 self_logo">
-							<img src="/assets/img/alur.png" alt="" style="margin-left:-5px;filter: grayscale(1);">
+							<img src="/assets/img/alur.png" alt="" class="partner_logo"
+								style="margin-left:-5px;filter: grayscale(1);">
 						</a>
-						<div class="header_contacts ms-auto me-auto">
+						<div class="header_contacts ms-auto me-auto  d-none d-lg-flex">
 							<a href="Tel:+74012430271" class="phone-link "><svg xmlns="http://www.w3.org/2000/svg"
 									xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
 									y="0px" viewBox="0 0 122.88 122.27" width="1rem"
@@ -37,10 +39,12 @@
 								</svg> +7(401) 243-02-71</a>
 							<span class="adress">г. Калининград, ул.Дзержинского 130</span>
 						</div>
-						<div class="header_callback   me-4 ms-4">
-							<a class="button button-white ps-3 pe-3" href="#" s>Обратный звонок</a>
+						<div class="header_callback col ms-auto col-lg-2  me-4 ms-lg-4 d-none d-sm-block">
+							<button type="button" class="button  button-white ps-3 pe-3" data-bs-toggle="modal"
+								data-bs-target="#exampleModal">Обратный звонок</button>
+
 						</div>
-						<div class="header_navbar ">
+						<div class="header_navbar ms-auto ms-xl-0 col-xs-3">
 
 							<div class="menu-btn__icon" aria-hidden="true">
 								<a class="icon icon--menu" data-bs-toggle="offcanvas" href="#offcanvasExample"
@@ -73,10 +77,15 @@
 																href="#">Главная</a>
 														</li>
 														<li class="nav-item">
-															<a class="nav-link" href="#">Сервис</a>
+															<a class="nav-link" href="#benefits">Преимущества работы с
+																нами</a>
+														</li>
+
+														<li class="nav-item">
+															<a class="nav-link" href="#cta_test-drive">Тест драйв</a>
 														</li>
 														<li class="nav-item">
-															<a class="nav-link" href="#">О Jetour</a>
+															<a class="nav-link" href="#brand">О Jetour</a>
 														</li>
 														<li class="nav-item dropdown">
 															<a class="nav-link dropdown-toggle" href="#" id="dropdown04"
@@ -84,13 +93,15 @@
 																aria-expanded="false">Модельный
 																ряд</a>
 															<ul class="dropdown-menu" aria-labelledby="dropdown04">
-																<li><a class="dropdown-item" href="#">Модель 1 </a></li>
-																<li><a class="dropdown-item" href="#">Модель 2</a></li>
+																<li><a class="dropdown-item" href="#models"
+																		data-model="1">Dashing </a></li>
+																<li><a class="dropdown-item" href="#models"
+																		data-model="2">X90 PLUS</a></li>
 
 															</ul>
 														</li>
 														<li class="nav-item">
-															<a class="nav-link" href="#">Контакты</a>
+															<a class="nav-link" href="#contacts">Контакты</a>
 														</li>
 													</ul>
 
@@ -159,9 +170,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="intro_slider-wrapper col-12">
-								<h2 class="h1 mb-5">JETOUR X90 PLUS</h2>
+								<h2 class="h1 mb-md-5 mb-4">JETOUR Dashing</h2>
 								<p class="intro_subtitle mb-4">Скоро в Калининграде</p>
-								<a class="button button-transparent ps-3 pe-3" href="#">
+								<a class="button button-transparent ps-3 pe-3" href="#models" data-model="1">
 									О Модели
 									<div class="t-btn_wrap-effects">
 										<div class="t-btn_effects"></div>
@@ -176,9 +187,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="intro_slider-wrapper col-12">
-								<h2 class="h1 mb-5">JETOUR DASHING</h2>
+								<h2 class="h1 mb-md-5 mb-4">JETOUR DASHING</h2>
 								<p class="intro_subtitle mb-4">Скоро в Калининграде</p>
-								<a class="button button-transparent ps-3 pe-3" href="#">
+								<a class="button button-transparent ps-3 pe-3" href="#models" data-model="1">
 									О Модели
 									<div class="t-btn_wrap-effects">
 										<div class="t-btn_effects"></div>
@@ -192,9 +203,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="intro_slider-wrapper col-12">
-								<h2 class="h1 mb-5">JETOUR DASHING</h2>
+								<h2 class="h1 mb-md-5 mb-4">JETOUR X90 PLUS</h2>
 								<p class="intro_subtitle mb-4">Скоро в Калининграде</p>
-								<a class="button button-black ps-3 pe-3" href="#">
+								<a class="button button-black ps-3 pe-3" href="#models" data-model="2">
 									О Модели
 									<div class="t-btn_wrap-effects">
 										<div class="t-btn_effects"></div>
@@ -208,9 +219,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="intro_slider-wrapper col-12">
-								<h2 class="h1 mb-5">JETOUR DASHING</h2>
+								<h2 class="h1 mb-md-5 mb-4">JETOUR X90 PLUS</h2>
 								<p class="intro_subtitle mb-4">Скоро в Калининграде</p>
-								<a class="button button-green ps-3 pe-3" href="#">
+								<a class="button button-green ps-3 pe-3" href="#models" data-model="2">
 									О Модели
 									<div class="t-btn_wrap-effects">
 										<div class="t-btn_effects"></div>
@@ -229,14 +240,14 @@
 			<!--<div class="swiper-pagination"></div>-->
 		</div>
 
-		<section class="models">
+		<section class="models" id="models">
 			<div class="swiper model_slider">
 				<div class="swiper-wrapper">
 					<div class="model_item swiper-slide mb-5">
 						<div class=" model_preview" style="background-image:url(/assets/img/16729725787905.jpg)">
 
 						</div>
-						<div class="container">
+						<div class="container-lg">
 							<div class=" model_image-row relative ">
 
 								<img src="/assets/img/dash.png" alt="">
@@ -261,45 +272,46 @@
 
 								</div>
 								<div class="model_info-buttons-row d-flex">
-									<a class="button button-black ps-3 pe-3 me-3" href="#" s="">Тест-драйв</a>
-									<a class="button button-white ps-3 pe-3 me-3" href="#" s="">О модели</a>
-									<a class="button button-white ps-3 pe-3 me-3" href="#" s="">Автомобили в наличии</a>
+									<a class="button button-black ps-3 pe-3 me-sm-3 me-2" href="#cta_test-drive"
+										s="">Тест-драйв</a>
+
+									<a class="button button-white ps-3 pe-3 " href="#contacts" s="">Консультация</a>
 									<div class="model_gallery swiper d-flex">
 
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
-												<a href="/assets/img/x90/1.jpg"
-													style="background:url(/assets/img/x90/1.jpg)no-repeat ;"
+												<a href="/assets/img/dashing/1.jpg"
+													style="background:url(/assets/img/dashing/1.jpg)no-repeat ;"
 													data-lightbox="ss" data-title="Подпись">
 
 												</a>
 											</div>
 
 											<div class="swiper-slide">
-												<a href="/assets/img/x90/2.jpg"
-													style="background:url(/assets/img/x90/2.jpg)no-repeat ;"
+												<a href="/assets/img/dashing/2.jpg"
+													style="background:url(/assets/img/dashing/2.jpg)no-repeat ;"
 													data-lightbox="ss" data-title="Подпись">
 												</a>
 											</div>
 
 											<div class="swiper-slide">
-												<a href="/assets/img/x90/3.jpg"
-													style="background:url(/assets/img/x90/3.jpg)no-repeat;"
+												<a href="/assets/img/dashing/3.jpg"
+													style="background:url(/assets/img/dashing/3.jpg)no-repeat;"
 													data-lightbox="ss" data-title="Подпись">
 												</a>
 											</div>
 
 
 											<div class="swiper-slide">
-												<a href="/assets/img/x90/4.jpg"
-													style="background:url(/assets/img/x90/4.jpg)no-repeat;"
+												<a href="/assets/img/dashing/4.jpg"
+													style="background:url(/assets/img/dashing/4.jpg)no-repeat;"
 													data-lightbox="ss" data-title="Подпись">
 												</a>
 											</div>
 
 											<div class="swiper-slide">
-												<a href="/assets/img/x90/5.jpg"
-													style="background:url(/assets/img/x90/5.jpg)no-repeat;"
+												<a href="/assets/img/dashing/5.jpg"
+													style="background:url(/assets/img/dashing/5.jpg)no-repeat;"
 													data-lightbox="ss" data-title="Подпись">
 												</a>
 											</div>
@@ -331,28 +343,27 @@
 
 								<h2 class="mb-2">X90 PLUS</h2>
 								<h3 class="bold mb-5" style="text-transform:capitalize;">Вместительный семейный
-									кроссовер<br>
-									на все случаи жизни</h3>
+									кроссовер</h3>
 								<div class=" model_info-row d-flex mb-4">
 									<div class="model_info-item me-4 pe-4">
-										<p class="model_info-key">Колёсная база22</p>
-										<p class="model_info-value "><span>27202</span> мм</p>
+										<p class="model_info-key">Колёсная база</p>
+										<p class="model_info-value "><span>2850</span> мм</p>
 									</div>
 									<div class="model_info-item me-4 pe-4">
 										<p class="model_info-key">Максимальная скорость</p>
-										<p class="model_info-value"><span>1902 </span> км/ч</p>
+										<p class="model_info-value"><span>190 </span> км/ч</p>
 									</div>
 									<div class="model_info-item me-4 pe-4">
 										<p class="model_info-key">Расход топлива</p>
-										<p class="model_info-value"><span>82 л</span> / 100 км</p>
+										<p class="model_info-value"><span>8л</span> / 100 км</p>
 									</div>
 
 								</div>
 								<div class="model_info-buttons-row d-flex">
-									<a class="button button-green ps-3 pe-3 me-3" href="#" s="">Тест-драйв</a>
-									<a class="button button-white  ps-3 pe-3 me-3" href="#" s="">О модели</a>
-									<a class="button button-white  ps-3 pe-3 me-3" href="#" s="">Автомобили в
-										наличии</a>
+									<a class="button button-green ps-3 pe-3 me-sm-3 me-2" href="#cta_test-drive"
+										s="">Тест-драйв</a>
+
+									<a class="button button-white  ps-3 pe-3 " href="#contacts">Консультация</a>
 
 									<div class="model_gallery swiper d-flex">
 
@@ -416,10 +427,10 @@
 
 
 		</section>
-		<section class="benefits">
-			<div class="container">
+		<section class="benefits" id="benefits">
+			<div class="container-lg">
 				<div class="benefits__row pb-5 ">
-					<h2 class="benefits__title">
+					<h2 class="">
 						Преимущества покупки у нас </h2>
 					<div class="benefits__grid">
 						<div class="benefits__item">
@@ -511,7 +522,7 @@
 			</div>
 		</section>
 
-		<section class="cta_test-drive pt-5 pb-5">
+		<section class="cta_test-drive pt-5 pb-md-5 pb-0" id="cta_test-drive">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 pt-4 pb-4">
@@ -539,11 +550,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="about-brand pt-5 pb-5">
-			<div class="container">
+		<section class="about-brand pt-5 pb-5" id="brand">
+			<div class="container-lg">
 				<div class="row">
 					<div class="col-md-6">
-						<h2 class="text-uppercase mb-4">О бренде</h2>
+						<h2 class="h2">О бренде</h2>
 						<p>Jetour – бренд кроссоверов и внедорожников для путешествий, созданный в январе 2018 года.
 							Бренд появился в ответ на
 							тенденции автомобильного рынка и изменения потребительского спроса.</p>
@@ -566,11 +577,11 @@
 		</section>
 
 
-		<section class="contacts pt-5 pb-4">
-			<div class="container">
+		<section class="contacts pt-5 pb-md-4" id="contacts">
+			<div class="container-lg">
 				<h2 class="h2">Контакты</h2>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 content-col">
 						<div class="contacts__content">
 							<div class="row d-flex mt-2">
 								<p class="lightgray col-md-6">Адрес: <br>
@@ -605,7 +616,7 @@
 									<div class="col-md-6"><textarea class="w-100" name="" id="" cols="4"
 											rows="3">Ваш вопрос</textarea></div>
 								</div>
-								<div class="d-flex">
+								<div class="d-flex agreement-wrapper">
 									<div class="agreement form-group" style="display:flex;align-items: center;">
 										<label style="display:flex;align-items: center;">
 											<input type="checkbox" name="agreement" id="agreement1" class="" checked=""
@@ -630,7 +641,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 map_col">
 						<div class="map"><iframe
 								src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a919ba2a1bb829a6f41b91e0f2ada163cab4c0014685883dcfc1cf7bf740573&amp;source=constructor"
 								width="640" height="450" style="width:100%" loding="lazy" frameborder="0"></iframe>
@@ -640,29 +651,81 @@
 			</div>
 		</section>
 	</main>
-	<footer style=" border-top:1px solid var(--bs-gray)">
-		<div class="container">
-			<div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title bold" id="exampleModalLabel">Заказать обратный звонок</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<input type="text" class="w-100 input me-3 mb-3" name="name" value=""
+								placeholder="Ваше имя *" required="">
+							<input type="tel" class="w-100 input mb-3" name="tel" value=""
+								placeholder="Номер телефона *" required="">
+						</div>
+						<div class="agreement form-group" style="display:flex;align-items: center;">
+							<label style="display:flex;align-items: center;">
+								<input type="checkbox" name="agreement" id="agreement1" class="" checked=""
+									style=" border: none;box-shadow: none;width: 40px;;margin-right: 20px;">
+								<p class=""> Нажимая кнопку Вы даете согласие на сбор, обработку и хранение
+									персональных
+									данных в соответствии с
+									<a href="/politika" target="blank_" style="font-weight:bold;">
+										приложенными
+										документами</a>
+								</p>
+
+							</label>
+						</div>
+						<button type="submit" name="button"
+							class="button button-green pe-3 ps-3 mt-3 w-100">Отправить</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<footer style=" border-top:1px solid var(--bs-gray)" class="">
+		<div class="container-lg">
+			<div class="d-flex flex-wrap justify-content-between align-items-center py-md-3 my-md-4 py-3">
 				<div class="col-md-4 d-flex align-items-center">
-					<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+					<a href="/" class=" me-2 mb-md-0 text-muted text-decoration-none lh-1">
 
 						<img src="/assets/img/jetour.png" alt="" width="160" class="me-4 pe-4 self_logo">
 
 					</a>
-					<span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+					<span class="mb-3 mb-md-0 text-muted d-none d-md-block">© 2022 Company, Inc</span>
 				</div>
 
-				<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-					<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-								<use xlink:href="#twitter"></use>
-							</svg></a></li>
-					<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-								<use xlink:href="#instagram"></use>
-							</svg></a></li>
-					<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-								<use xlink:href="#facebook"></use>
-							</svg></a></li>
-				</ul>
+				<div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+					<div class="t-sociallinks__wrapper d-flex "><!-- new soclinks -->
+						<div class="t-sociallinks__item t-sociallinks__item_vk"><a href="https://vk.com/jetour_kld"
+								target="_blank" rel="nofollow noopener" style="width: 30px; height: 30px;"><svg
+									class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100"
+									fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z"
+										fill="#000"></path>
+								</svg></a></div>
+						<div class="t-sociallinks__item t-sociallinks__item_email"><a
+								href="mailto:darina.minaeva@jetour-dynamica.ru" target="_blank" rel="nofollow"
+								style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width="30px"
+									height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M50 100c27.6142 0 50-22.3858 50-50S77.6142 0 50 0 0 22.3858 0 50s22.3858 50 50 50ZM26.2268 34.1813c.3042-.9738.9636-1.693 1.8568-2.0249l.4151-.1543 21.4794-.0018c21.3404-.0017 21.4819-.0009 21.8807.1335.9642.3248 1.6814 1.1482 1.9797 2.2727l.0944.3556-1.7711 1.2707c-2.462 1.7666-6.8447 4.9166-8.8523 6.3624-.925.6662-2.2783 1.639-3.0072 2.1619-2.1029 1.5081-4.2894 3.0785-5.891 4.2312-3.6493 2.6264-4.3577 3.1288-4.4113 3.1288-.0541 0-.817-.5414-4.5039-3.1961-1.6149-1.1627-3.4655-2.4914-5.7994-4.1637-.7296-.5227-2.1661-1.5561-3.1924-2.2964-1.0262-.7404-2.4421-1.7593-3.1465-2.2642-.7044-.5051-2.3496-1.6873-3.656-2.6273s-2.646-1.9002-2.9769-2.1338c-.667-.4708-.675-.4878-.4981-1.0543Zm-.1497 27.1823c-.0616.0397-.0771-2.244-.0771-11.3267 0-6.257.0122-11.3764.0271-11.3764.015 0 1.063.7458 2.3291 1.6574 2.2612 1.628 3.4539 2.4857 6.7132 4.8273 2.1704 1.5593 4.0585 2.9159 5.6761 4.0785.7296.5244 1.3265.9876 1.3265 1.0293 0 .0718-.8103.6465-3.9486 2.8008-.7465.5124-2.0931 1.4401-2.9923 2.0616-.8992.6215-3.1064 2.1429-4.9049 3.3809-1.7984 1.238-3.4504 2.3784-3.6709 2.5342-.2206.1559-.4357.3058-.4782.3331Zm43.234-19.3639c.6277-.4485 1.9187-1.381 2.8688-2.0722.9502-.6912 1.7483-1.259 1.7738-1.2619.0255-.0028.0463 5.1143.0463 11.3713 0 9.0827-.0155 11.3664-.0771 11.3267-.0424-.0273-.2576-.1768-.4782-.3323-.2205-.1554-1.0951-.7591-1.9434-1.3415-.8483-.5824-1.6812-1.1582-1.8509-1.2795-.1697-.1213-.7388-.5155-1.2648-.8759-.526-.3604-1.3172-.9043-1.7583-1.2086-.4412-.3043-2.1348-1.4711-3.7635-2.593-4.735-3.2613-4.9358-3.4028-4.9358-3.4788 0-.0759.2206-.2386 4.0412-2.9806 1.3064-.9376 3.2359-2.3243 4.2879-3.0815 1.0519-.7573 2.4262-1.7437 3.054-2.1922ZM37.8152 57.1366c.3609-.2411 1.7297-1.1886 4.8121-3.3308 1.2215-.849 2.2627-1.5349 2.3136-1.5242.0509.0107 1.0504.7092 2.2211 1.5523 1.1706.8431 2.2361 1.5743 2.3676 1.625.3044.1171.6365.117.9414-.0003.1318-.0507 1.1964-.7809 2.3658-1.6228 1.1693-.8418 2.1572-1.5435 2.1951-1.5594.0604-.0253 1.5111.9576 5.8267 3.9476 1.1431.7919 2.7209 1.8798 5.9537 4.1051.9502.6541 2.9214 2.014 4.3805 3.022l2.653 1.8328-.0051.2599c-.0072.3723-.3476 1.0784-.7463 1.5482-.3863.4549-1.0056.8296-1.5552.9408C71.322 67.9767 63.8578 68 50 68c-13.8578 0-21.322-.0233-21.5392-.0672-.5496-.1112-1.1689-.4859-1.5552-.9408-.3741-.4409-.7126-1.118-.7618-1.5243l-.0316-.2603 1.656-1.14c.9108-.627 2.2112-1.5239 2.8899-1.9932 3.6716-2.539 6.8851-4.7559 7.1571-4.9376Z"
+										fill="#000"></path>
+								</svg></a></div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -705,7 +768,9 @@
 			//speed: 1,
 			fadeEffect: { crossFade: true },
 			slidesPerView: 1,
-
+			autoplay: {
+				delay: 4000,
+			},
 			navigation: {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
@@ -739,10 +804,31 @@
 				nextEl: ".model-swiper-button-next",
 				prevEl: ".model-swiper-button-prev",
 			},
+			breakpoints: {
+				// mobile + tablet - 320-990
+				320: {
+					slidesPerView: 1
+				},
+				600: {
+					slidesPerView: 3
+				},
+				1200: {
+					slidesPerView: 3
+				}
+			},
 
 		});
 	</script>
-
+	<script>
+		$(document).ready(function () {
+			$(".intro_slider-wrapper .button,.dropdown-item").on("click", function () {
+				let model = $(this).attr('data-model');
+				$('.models .swiper-pagination span:nth-child(' + model + ')').click();
+				// mySwiper.slideTo
+				console.log(model)
+			});
+		});
+	</script>
 </body>
 
 </html>

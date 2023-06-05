@@ -212,11 +212,23 @@ header {
   color: #000;
   text-decoration: none;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 .phone-link:hover {
-  color: black;
+  color: var(--bs-teal);
+}
+.phone-link svg {
+  transition: all 0.3s;
 }
 .phone-link:hover svg {
+  fill: var(--bs-teal);
+}
+.t-sociallinks__item a svg path {
+  transition: fill 0.3s;
+}
+.t-sociallinks__item a:hover svg path {
+  fill: var(--bs-teal);
 }
 .menu-btn__icon {
   position: relative;
@@ -271,12 +283,13 @@ header {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 /* header end */
 
 /* intro */
 .swiper-button-next,
 .swiper-button-prev {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 50%);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: color 0.3s;
 }
@@ -317,6 +330,47 @@ header {
 .intro_slider .button {
   max-width: 250px;
 }
+
+@media (max-width: 768px) {
+  .self_logo,
+  .partner_logo {
+    width: auto;
+    height: 25px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .model_item {
+    margin-bottom: 0 !important;
+  }
+  .intro_slider {
+    margin-top: 55px;
+    width: 100%;
+    height: calc(100vh - 55px);
+    min-height: 500px;
+  }
+  html,
+  body {
+    font-size: 14px;
+  }
+  .intro_slider .container {
+    padding-top: 0;
+    padding-bottom: 40%;
+  }
+  .intro_slider-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    height: 100%;
+    padding-top: 10%;
+  }
+  .intro_slider .button {
+    position: absolute;
+    bottom: 1rem;
+    width: calc(100% - 1.5rem);
+    max-width: 100%;
+  }
+}
 /* intro_slider*/
 
 /* models */
@@ -326,6 +380,12 @@ header {
   background-size: cover;
 
   margin: 0 auto;
+}
+.lb-nav a.lb-next {
+  background-image: url(assets/img/next.png) !important;
+}
+.lb-nav a.lb-prev {
+  background-image: url(assets/img/prev.png) !important;
 }
 .models_model-image {
   position: absolute;
@@ -433,6 +493,56 @@ header {
 .model_gallery .swiper-slide {
   pointer-events: all !important;
 }
+@media (max-width: 1200px) {
+  .model_image-row img {
+    width: 530px;
+  }
+  .models .swiper-pagination {
+    left: 50%;
+    margin-left: -480px;
+    text-align: end;
+    padding-right: 0;
+    bottom: auto;
+    top: 535px;
+  }
+}
+@media (max-width: 1000px) {
+  .model_preview {
+    height: 15rem;
+  }
+  .model_info-buttons-row {
+    flex-wrap: wrap;
+  }
+  .model_gallery {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .model_info h2 {
+    padding-top: 9rem !important;
+  }
+  .models .swiper-pagination {
+    left: 0;
+    margin-left: 0;
+    text-align: start;
+    padding-right: 0;
+    bottom: auto;
+    top: 535px;
+    top: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .model_gallery a {
+    width: 100%;
+    height: 13rem;
+  }
+  .model_image-row img {
+    width: 95vw;
+    top: -170px;
+  }
+  .models .swiper-pagination {
+    top: 270px;
+  }
+}
 
 /* end models*/
 
@@ -449,12 +559,52 @@ textarea {
   display: block;
   min-width: 240px;
 }
+.input:focus,
+.select:focus,
+.input:active,
+.select:active {
+  border-color: var(--bs-teal);
+  outline: none !important;
+}
 .cta_test-drive {
   background-color: #f5f7f8;
   background-image: url(/assets/img/asd2.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
+}
+.select {
+  background-image: url("assets/img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 1rem auto;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+@media (max-width: 1200px) {
+  .cta_test-drive {
+    background-position: right -70% center;
+  }
+}
+@media (max-width: 1000px) {
+  .cta_test-drive {
+    background-position: top 0% center;
+    padding-top: 45vw !important;
+  }
+}
+@media (max-width: 600px) {
+  .cta_test-drive .input,
+  .cta_test-drive button,
+  .cta_test-drive .select {
+    width: 100%;
+  }
+  .model_info-value {
+    font-size: 1rem;
+  }
+  .models .swiper-pagination-bullet {
+    width: calc(50% - 10px);
+  }
 }
 /* end cta_test-drive */
 /* about-brand */
@@ -495,6 +645,25 @@ textarea {
   line-height: 1.1;
   margin-bottom: 0;
   margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .input,
+  .select,
+  textarea {
+    min-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .content-col {
+    order: 2;
+    margin-top: 1.4rem;
+  }
+  #contact_list_form .agreement {
+    margin-top: 1rem;
+  }
+  .agreement-wrapper {
+    flex-direction: column;
+  }
 }
 /* contacts */
 
@@ -609,7 +778,15 @@ textarea {
     width: 55%;
   }
 }
-@media (max-width: 600) {
+@media (max-width: 769px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  h2 {
+    margin-bottom: 1.6rem;
+  }
   .benefits {
     padding: 24px 0px;
   }
@@ -697,7 +874,10 @@ textarea {
     margin-top: -13%;
   }
 }
-
+/* footer*/
+footer .t-sociallinks__item {
+  margin-bottom: 0;
+}
 /* animation */
 
 @-webkit-keyframes flash {
