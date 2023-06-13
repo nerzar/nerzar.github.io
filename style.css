@@ -528,6 +528,13 @@ header {
 .model_gallery .swiper-slide {
   pointer-events: all !important;
 }
+.curmodel_info {
+  margin-top: 160px;
+  padding-bottom: 60px;
+}
+.curmodel_info #myTabContent {
+  max-height: none;
+}
 @media (max-width: 1200px) {
   .model_image-row img {
     width: 530px;
