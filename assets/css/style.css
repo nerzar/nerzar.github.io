@@ -384,7 +384,7 @@ a:hover {
   margin-top: -2%;
   box-shadow: 0px 15px 54px 0px rgba(117, 146, 173, 0.25);
   border-radius: 30px;
-  margin-right: -31%;
+  margin-right: -31.5%;
   padding: 0;
 }
 #popup:before {
@@ -403,7 +403,7 @@ a:hover {
   border-radius: 30px;
   width: 100%;
   background-color: #ffffff;
-  padding: 90px 60px;
+  padding: 85px 65px;
   border-radius: 30px;
 }
 #popup h3 {
@@ -413,12 +413,13 @@ a:hover {
   font-weight: 300;
   color: #585858;
   margin-top: 0;
-  margin-bottom: 49px;
+  margin-bottom: 40px;
   text-align: center;
 }
 #popup h3 b {
   font-family: "Suisse Intl Black";
   font-weight: 600;
+  color: #000;
 }
 
 #phone {
@@ -426,7 +427,7 @@ a:hover {
   height: 110px;
   border: 1px solid #ffc000;
   border-radius: 54.4px;
-  padding-left: 30%;
+  padding-left: 33%;
   font-family: "Suisse Intl Light";
   font-size: 31.7px;
   line-height: 109px;
@@ -434,8 +435,12 @@ a:hover {
   color: rgba(0, 0, 0, 0.2);
   background-image: url(/assets/img/phoneicon.png);
   background-repeat: no-repeat;
-  background-position: 20% 35px;
-  margin-bottom: 26px;
+  background-position: 23% 35px;
+  margin-bottom: 24px;
+  width: calc(100% - 28px);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 #phone::placeholder {
 }
@@ -452,6 +457,9 @@ a:hover {
 }
 #popup .btn-big {
   margin-bottom: 48px;
+  width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
 }
 .popup_agreement {
   font-family: "Suisse Intl Light";
@@ -459,7 +467,7 @@ a:hover {
   line-height: 22px;
   font-weight: 300;
   color: #585858;
-  padding-left: 60px;
+  padding-left: 110px;
   display: block;
   position: relative;
 }
@@ -487,7 +495,7 @@ a:hover {
   border: 1px solid #ffbe00;
   border-radius: 2px;
   position: absolute;
-  left: 30px;
+  left: 72px;
   top: 3px;
 }
 .popup_agreement-checkbox:checked + span:after {
