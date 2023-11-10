@@ -1,521 +1,122 @@
-<!-- /*
-* Bootstrap 5
-* Template Name: Furni
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Untree.co">
-	<link rel="shortcut icon" href="favicon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing ТЗ</title>
+	<link rel="stylesheet" href="/assets/css/normalize.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 
-	<meta name="description" content=" Кухни и шкафы-купе на заказ в Петрозаводске напрямую от фабрики с 10-летним
-							опытом работы.
-							По ценам ниже рыночных на 30%" />
-	<meta name="keywords" content="bootstrap, bootstrap4" />
-	<title>Мебель Петрозаводск. Студия мебели Игуана</title>
-	<!-- Bootstrap CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link href="css/tiny-slider.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
-	<!-- Marquiz script start -->
-	<script>
-		(function (w, d, s, o) {
-			var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js'; j.onload = function () {
-				if (document.readyState !== 'loading') Marquiz.init(o);
-				else document.addEventListener("DOMContentLoaded", function () {
-					Marquiz.init(o);
-				});
-			};
-			d.head.insertBefore(j, d.head.firstElementChild);
-		})(window, document, 'script', {
-			host: '//quiz.marquiz.ru',
-			region: 'eu',
-			id: '6511a0ac93926d00250a652e',
-			autoOpen: false,
-			autoOpenFreq: 'once',
-			openOnExit: false,
-			disableOnMobile: false
-		}
-		);
-	</script>
-	<!-- Marquiz script end -->
 </head>
 
 <body>
-	<style>
-		.but {
-			position: fixed;
-			left: 10px;
-			top: 40%;
-		}
-
-		#order {
-			display: block !important;
-		}
-
-		@media screen and (max-width: 760px) {
-			.navbar-brand span {
-				font-size: 20px;
-			}
-
-			.why-choose-section {
-				padding: 3rem 0;
-			}
-		}
-	</style>
-	<button class="but">ВКЛ/ВЫКЛ</button>
-	<!-- Start Header/Navigation -->
-	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-
-		<div class="container">
-			<a class="navbar-brand" href="index.html" style="margin-left:auto"> <span>Студия мебели
-					Игуана</span></a>
-
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
-				aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse " id="navbarsFurni" style="display:none!important;">
-				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li><a class="nav-link" href="shop.html">Shop</a></li>
-					<li><a class="nav-link" href="about.html">About us</a></li>
-					<li><a class="nav-link" href="services.html">Services</a></li>
-					<li><a class="nav-link" href="blog.html">Blog</a></li>
-					<li><a class="nav-link" href="contact.html">Contact us</a></li>
-				</ul>
-
-				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5" style="display:none;">
-					<li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
-					<li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
-				</ul>
-			</div>
-		</div>
-
-	</nav>
-	<!-- End Header/Navigation -->
-
-	<!-- Start Hero Section -->
-	<div class="hero" style="    overflow: hidden;">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-lg-5">
-					<div class="intro-excerpt">
-						<h1>Кухни и<br> шкафы-купе в Петрозаводске</h1>
-						<p class="mb-4"> Кухни и шкафы-купе на заказ в Петрозаводске напрямую от фабрики с 10-летним
-							опытом работы.
-							По ценам ниже рыночных на 30%</p>
-						<p><a href="#order" class="btn btn-secondary me-2">Рассчитать стоимость</a></p>
+	<main class="main">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="header_item">
+						<a href="/" class="logo">
+							<img src="/assets/img/logo.png" alt="Whitewill">
+						</a>
+					</div>
+					<div class="header_item header_item-adress">
+						<a href="#" class="header_adress">23 King Street<br> London SW1Y 6QY</a>
+					</div>
+					<div class="header_item header_item-phone">
+						<a href="tel:+442080899006" class="header_phone"><span class="tnum">44</span> 20 8089 9006</a>
+						<a href="#" data-fancybox data-src="#popup" class="header_callback">Перезвонить вам?</a>
+					</div>
+					<div class="header_item">
+						<div class="header_lang-switch">
+							<a href="#" class="lang_en lang">EN</a>
+							<a href="#" class="lang_ru lang active">RU</a>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-7">
-					<div class="hero-img-wrap">
-						<img src="5.png" class="" style="max-width:100%;">
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="main_ttitle-wrapper">
+					<h1 class="main_title"><span class="number">110</span><span class="best"> лучших</span>
+						<span class="ls-small">новостроек</span> <span class="london">Лондона</span>
+					</h1>
+					<div class="banner ">
+						<span>от<br> 33 500 000 ₽</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- End Hero Section -->
-
-
-
-
-
-	<!-- Start Why Choose Us Section -->
-	<div class="why-choose-section">
 		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-lg-6">
-					<h2 class="section-title">Why Choose Us</h2>
-					<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
-						imperdiet dolor tempor tristique.</p>
-
-					<div class="row my-5">
-						<div class="col-6 col-md-6">
-							<div class="feature">
-								<div class="icon">
-									<img src="images/truck.svg" alt="Image" class="imf-fluid">
-								</div>
-								<h3>Fast &amp; Free Shipping</h3>
-								<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-									vulputate.</p>
-							</div>
+			<div class="cta-wrapper">
+				<div class="cta">
+					<div class="row">
+						<div class="col">
+							<h3><b>Скачайте</b> каталог
+								элитных новостроек
+								в центре Лондона</h3>
+							<button class="btn" data-fancybox data-src="#popup">Скачать каталог</button>
 						</div>
+						<div class="col">
+							<ul class="cta_list">
+								<li>158 комплексов с апартаментами</li>
+								<li>45 клубных домов в Сити</li>
+								<li>164 комплекса с пентхаусами</li>
+								<li>200 комплексов для инвестиций</li>
 
-						<div class="col-6 col-md-6">
-							<div class="feature">
-								<div class="icon">
-									<img src="images/bag.svg" alt="Image" class="imf-fluid">
-								</div>
-								<h3>Easy to Shop</h3>
-								<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-									vulputate.</p>
-							</div>
+							</ul>
+							<p class="update">Обновлен <b>5 марта 2020</b></p>
 						</div>
-
-						<div class="col-6 col-md-6">
-							<div class="feature">
-								<div class="icon">
-									<img src="images/support.svg" alt="Image" class="imf-fluid">
-								</div>
-								<h3>24/7 Support</h3>
-								<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-									vulputate.</p>
-							</div>
-						</div>
-
-						<div class="col-6 col-md-6">
-							<div class="feature">
-								<div class="icon">
-									<img src="images/return.svg" alt="Image" class="imf-fluid">
-								</div>
-								<h3>Hassle Free Returns</h3>
-								<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-									vulputate.</p>
-							</div>
-						</div>
-
 					</div>
 				</div>
-
-				<div class="col-lg-5">
-					<div class="img-wrap">
-						<img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
-					</div>
-				</div>
-
 			</div>
 		</div>
-	</div>
-
-	<div class="why-choose-section we-help-section" id="order">
-		<div class="container">
-			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-
-
-			<!-- VK Widget -->
+		<footer class="footer">
 			<div class="row">
-				<div class="col-12">
-					<h2 class="section-title mb-5 text-center">Рассчитать стоимость</h2>
+				<div class="footer_menu">
+					<a href="#" class="footer_link-silver">Privacy Policy</a>
+					<a href="#" class="footer_link-silver">Cookie Policy</a>
+					<a href="#" class="footer_link-black">Info@whitewill.ru</a>
 				</div>
-				<div class="col-12 col">
-					<div class="imgs-grid"></div>
-					<div data-marquiz-id="651449ebecc73e002519bcf5"></div>
-					<script>(function (t, p) { window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () { Marquiz.add([t, p]) }) })('Inline', { id: '651449ebecc73e002519bcf5', buttonText: 'Пройти тест', bgColor: '#3b5d50', textColor: '#ffffff', rounded: true, shadow: 'rgba(59, 93, 80, 0.5)', blicked: true })</script>
-				</div>
-
 			</div>
+		</footer>
+	</main>
+	<div class="popup" id="popup" style="display:none;">
+		<div class="popup_wrapper">
+			<h3><b>Скачайте</b> актуальный
+				каталог объектов
+				недвижимости в Лондоне</h3>
+			<form action="" class="popup_form">
+				<input type="tel" name="phone" id="phone" placeholder="+7 919 919 91 91" required>
+				<button class="btn btn-big" type="submit">скачать каталог</button>
+				<label class="popup_agreement">
+					<input type="checkbox" name="agreement" class="popup_agreement-checkbox">
+					<span class="styled-checkbox"></span>
+					Я ознакомился и соглашаюсь с <a href="#">условиями обработки данных</a> и <a href="#">политикой
+						конфиденциальности</a>
 
+				</label>
+			</form>
 		</div>
 	</div>
-	<div class="why-choose-section" id="contacts">
-		<div class="container">
-			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-			<div class="row">
-				<div class="col">
-					<!--<div class="imgs-grid"></div>-->
-
-					<h2 class="section-title mb-5">Контакты</h2>
-				</div>
-			</div>
-
-
-			<!-- VK Widget -->
-			<div class="row">
-
-				<div class="col-lg-5 col">
-
-					<div class="mb-5">
-						<div class="">
-							<div class="service no-shadow align-items-center link horizontal d-flex active"
-								data-aos="fade-left" data-aos-delay="0">
-								<div class="service-icon color-1 mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-										class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-										<path
-											d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
-										</path>
-									</svg>
-								</div> <!-- /.icon -->
-								<div class="service-contents">
-									<p>Балтийская, 14 ст6, Петрозаводск</p>
-								</div> <!-- /.service-contents-->
-							</div> <!-- /.service -->
-						</div>
-
-						<div class="">
-							<div class="service no-shadow align-items-center link horizontal d-flex active"
-								data-aos="fade-left" data-aos-delay="0">
-								<div class="service-icon color-1 mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-										class="bi bi-envelope-fill" viewBox="0 0 16 16">
-										<path
-											d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z">
-										</path>
-									</svg>
-								</div> <!-- /.icon -->
-								<div class="service-contents">
-									<p>Iguanamebel.ptz@gmail.com</p>
-								</div> <!-- /.service-contents-->
-							</div> <!-- /.service -->
-						</div>
-
-						<div class="">
-							<div class="service no-shadow align-items-center link horizontal d-flex active"
-								data-aos="fade-left" data-aos-delay="0">
-								<div class="service-icon color-1 mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-										class="bi bi-telephone-fill" viewBox="0 0 16 16">
-										<path fill-rule="evenodd"
-											d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
-										</path>
-									</svg>
-								</div> <!-- /.icon -->
-								<div class="service-contents">
-									<p><a href="tel:+79535270280"> +7 (953) 527-02-80</a></p>
-								</div> <!-- /.service-contents-->
-							</div> <!-- /.service -->
-						</div>
-					</div>
-					<iframe
-						src="https://yandex.ru/map-widget/v1/?um=constructor%3Adc858ce1cf19d142a41ad883f08a5f8112944f48cee8b526d54532cf7c893a02&amp;source=constructor"
-						width="620" height="320" frameborder="0" loading="lazy" style="max-width: 100%;"></iframe>
-				</div>
-				<div class="col col-lg-7 d-none d-lg-block ">
-					<div class="img-wrap"></div>
-					<div id="vk_groups" style="box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);"
-						style="max-width:100%;"></div>
-					<script type="text/javascript">
-						VK.Widgets.Group("vk_groups", { mode: 4, wide: 1, width: "auto", height: "600", color1: 'eff2f1', color3: '3B5D50' }, 63066642);
-					</script>
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<!-- Start We Help Section -->
-	<!---->
-
-	<div class="we-help-section">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-lg-7 mb-5 mb-lg-0">
-					<div class="imgs-grid">
-						<div class="grid grid-1"><img src="images/img-grid-1.jpg" alt="Untree.co"></div>
-						<div class="grid grid-2"><img src="images/img-grid-2.jpg" alt="Untree.co"></div>
-						<div class="grid grid-3"><img src="images/img-grid-3.jpg" alt="Untree.co"></div>
-					</div>
-				</div>
-				<div class="col-lg-5 ps-lg-5">
-					<h2 class="section-title mb-4">We Help You Make Modern Interior Design</h2>
-					<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada.
-						Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque
-						habitant morbi tristique senectus et netus et malesuada</p>
-
-					<ul class="list-unstyled custom-list my-4">
-						<li>Donec vitae odio quis nisl dapibus malesuada</li>
-						<li>Donec vitae odio quis nisl dapibus malesuada</li>
-						<li>Donec vitae odio quis nisl dapibus malesuada</li>
-						<li>Donec vitae odio quis nisl dapibus malesuada</li>
-					</ul>
-					<p><a herf="#" class="btn">Explore</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End We Help Section -->
-
-
-
-	<!-- Start Testimonial Slider -->
-	<div class="testimonial-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 mx-auto text-center">
-					<h2 class="section-title">Отзывы</h2>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="testimonial-slider-wrap text-center">
-
-						<div id="testimonial-nav">
-							<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-							<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
-						</div>
-
-						<div class="testimonial-slider">
-
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
-
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-													vulputate velit imperdiet dolor tempor tristique. Pellentesque
-													habitant morbi tristique senectus et netus et malesuada fames ac
-													turpis egestas. Integer convallis volutpat dui quis
-													scelerisque.&rdquo;</p>
-											</blockquote>
-
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-												</div>
-												<h3 class="font-weight-bold">Maria Jones</h3>
-												<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!-- END item -->
-
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
-
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-													vulputate velit imperdiet dolor tempor tristique. Pellentesque
-													habitant morbi tristique senectus et netus et malesuada fames ac
-													turpis egestas. Integer convallis volutpat dui quis
-													scelerisque.&rdquo;</p>
-											</blockquote>
-
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-												</div>
-												<h3 class="font-weight-bold">Maria Jones</h3>
-												<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!-- END item -->
-
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
-
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-													vulputate velit imperdiet dolor tempor tristique. Pellentesque
-													habitant morbi tristique senectus et netus et malesuada fames ac
-													turpis egestas. Integer convallis volutpat dui quis
-													scelerisque.&rdquo;</p>
-											</blockquote>
-
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-												</div>
-												<h3 class="font-weight-bold">Maria Jones</h3>
-												<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!-- END item -->
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Testimonial Slider -->
-
-
-	<!-- Start Footer Section -->
-	<footer class="footer-section">
-		<div class="container relative">
-
-			<div class="sofa-img">
-				<img src="images/sofa.png" alt="Image" class="img-fluid">
-			</div>
-
-			<div class="row">
-				<div class="col-lg-3">
-					<a class="navbar-brand mb-3 d-block" href="index.html" style="margin-left:auto"> <span>Студия мебели
-							Игуана</span></a>
-					<div><a href="https://vk.com/mebelclubptz">
-							<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-								<path fill="#8F9496" fill-rule="evenodd"
-									d="M24.003 0C37.253 0 48 10.747 48 24.003 48 37.253 37.253 48 24.003 48 10.747 48 0 37.253 0 24.003 0 10.747 10.747 0 24.003 0zM38.29 17.219c.215-.703 0-1.219-1.026-1.219h-3.391c-.863 0-1.26.446-1.476.938 0 0-1.724 4.11-4.168 6.78-.79.772-1.15 1.018-1.58 1.018-.216 0-.528-.246-.528-.948v-6.57c0-.842-.25-1.218-.97-1.218h-5.328c-.54 0-.864.391-.864.762 0 .8 1.222.984 1.348 3.232v4.883c0 1.07-.198 1.265-.629 1.265-1.15 0-3.946-4.13-5.605-8.853-.325-.918-.651-1.289-1.518-1.289H9.163c-.97 0-1.163.446-1.163.938 0 .878 1.15 5.234 5.353 10.995C16.156 31.867 20.104 34 23.697 34c2.156 0 2.423-.474 2.423-1.29v-2.973c0-.948.204-1.137.887-1.137.503 0 1.365.246 3.377 2.143 2.3 2.249 2.679 3.257 3.972 3.257h3.392c.969 0 1.453-.474 1.173-1.409-.305-.931-1.403-2.283-2.86-3.885-.79-.914-1.976-1.897-2.335-2.389-.504-.632-.36-.913 0-1.475 0 0 4.132-5.691 4.563-7.623z" />
-							</svg>
-						</a></div>
-					<div class="subscription-form d-none">
-						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
-									alt="Image" class="img-fluid"></span><span>Контакты</span></h3>
-
-
-						<p class="mb-1">Адрес: Балтийская, 14 ст6, Петрозаводск</p>
-						<p class="mb-1">Телефон: <a href="tel:+79535270280"> +7 (953) 527-02-80</a></p>
-						<p>
-							<a href="https://vk.com/mebelclubptz">
-								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-									<path fill="#8F9496" fill-rule="evenodd"
-										d="M24.003 0C37.253 0 48 10.747 48 24.003 48 37.253 37.253 48 24.003 48 10.747 48 0 37.253 0 24.003 0 10.747 10.747 0 24.003 0zM38.29 17.219c.215-.703 0-1.219-1.026-1.219h-3.391c-.863 0-1.26.446-1.476.938 0 0-1.724 4.11-4.168 6.78-.79.772-1.15 1.018-1.58 1.018-.216 0-.528-.246-.528-.948v-6.57c0-.842-.25-1.218-.97-1.218h-5.328c-.54 0-.864.391-.864.762 0 .8 1.222.984 1.348 3.232v4.883c0 1.07-.198 1.265-.629 1.265-1.15 0-3.946-4.13-5.605-8.853-.325-.918-.651-1.289-1.518-1.289H9.163c-.97 0-1.163.446-1.163.938 0 .878 1.15 5.234 5.353 10.995C16.156 31.867 20.104 34 23.697 34c2.156 0 2.423-.474 2.423-1.29v-2.973c0-.948.204-1.137.887-1.137.503 0 1.365.246 3.377 2.143 2.3 2.249 2.679 3.257 3.972 3.257h3.392c.969 0 1.453-.474 1.173-1.409-.305-.931-1.403-2.283-2.86-3.885-.79-.914-1.976-1.897-2.335-2.389-.504-.632-.36-.913 0-1.475 0 0 4.132-5.691 4.563-7.623z" />
-								</svg>
-							</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-5 d-none">
-					<iframe
-						src="https://yandex.ru/map-widget/v1/?um=constructor%3Adc858ce1cf19d142a41ad883f08a5f8112944f48cee8b526d54532cf7c893a02&amp;source=constructor"
-						width="620" height="320" frameborder="0" loading="lazy" style="max-width: 100%;"></iframe>
-				</div>
-			</div>
-
-
-
-		</div>
-	</footer>
-	<!-- End Footer Section -->
-
-
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tiny-slider.js"></script>
-	<script src="js/custom.js"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script>
-		$('.but').click(function () {
-			$('.why-choose-section').toggle();
-			$('.we-help-section').toggle();
-			$('.testimonial-section').toggle();
-			$('#contacts').toggle();
+		Fancybox.bind('[data-fancybox]', {
 
 		});
+
+
 	</script>
 </body>
 

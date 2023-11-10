@@ -1,0 +1,525 @@
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("../fonts/SuisseIntl-Regular.otf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl Bold";
+  src: url("../fonts/SuisseIntl-Bold.otf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl Light";
+  src: url("../fonts/SuisseIntl-Light.otf");
+}
+@font-face {
+  font-family: "SuisseIntl Light Italic";
+  src: url("../fonts/SuisseIntl-LightItalic.otf");
+}
+@font-face {
+  font-family: "Suisse Intl Black";
+  src: url("../fonts/SuisseIntl-Black.otf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl RegularItalic";
+  src: url("../fonts/SuisseIntl-RegularItalic.otf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl BoldItalic";
+  src: url("../fonts/SuisseIntl-BoldItalic.otf");
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+.main {
+  height: 100vh;
+  background-image: url(/assets/img/bigben2.png), url(/assets/img/bg.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: top 0px left, top center;
+}
+.container {
+  max-width: 100%;
+  width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+}
+.header .row {
+  justify-content: space-between;
+  max-width: 953px;
+  height: 79px;
+}
+.logo img {
+  max-width: 91px;
+  width: 100%;
+}
+.header {
+  padding-top: 95px;
+}
+.header_adress {
+  font-family: "Suisse Intl";
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header_phone {
+  font-family: "Suisse Intl Bold";
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header_callback {
+  opacity: 0.5;
+  font-family: "Suisse Intl";
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #074a86;
+  letter-spacing: 0.4px;
+
+  padding-bottom: 2px;
+  border-bottom: 2px solid #074a86;
+}
+.header_phone {
+  display: block;
+  margin-bottom: 5px;
+}
+.header_lang-switch {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  padding: 9px 12px;
+}
+.lang {
+  font-size: 20px;
+  line-height: 25px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+  font-family: "Suisse Intl";
+  position: relative;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.lang:hover {
+  opacity: 1;
+}
+a {
+  transition: opacity 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+}
+.is-close-btn {
+  --f-button-color: #585858 !important;
+}
+.lang.active {
+  opacity: 1;
+}
+.lang_en {
+  margin-right: 10px;
+  padding-right: 12px;
+}
+.lang_en:after {
+  content: "|";
+  font-family: "Suisse Intl";
+  font-size: 20px;
+  position: absolute;
+  right: -2px;
+}
+.header_item-adress {
+  align-self: center;
+}
+.header_item-phone {
+  margin-right: -21px;
+  margin-top: 2px;
+}
+.main_title {
+  background-image: linear-gradient(
+    -44deg,
+    rgba(7, 74, 134, 0.5) 15%,
+
+    rgba(7, 74, 134, 1) 70%,
+    rgba(7, 74, 134, 1) 84%
+  );
+  font-family: "Playfair Display", serif;
+  font-size: 102.8px;
+  line-height: 108px;
+  font-weight: 400;
+
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 60px;
+}
+.main_ttitle-wrapper {
+  max-width: 600px;
+  position: relative;
+}
+.main_title span {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: normal;
+  /* letter-spacing: -1px;*/
+}
+.main_title .number {
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+.main_title .london {
+  font-weight: 400;
+  letter-spacing: -1.4px;
+}
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+.banner {
+  top: 170px;
+  /*
+  transform: rotate(-7deg);
+   right: -150px;*/
+  position: absolute;
+  /*transform: rotate(-8deg);*/
+  transform: skew(15deg, 15deg);
+  right: -150px;
+  background-image: linear-gradient(30deg, #e1a100 17%, #ffb700 82%);
+  box-shadow: -11px 19px 35px 0px rgba(255, 183, 0, 0.4);
+  padding: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.banner {
+  top: 169px;
+  position: absolute;
+  /* transform: rotate(-8deg); */
+  transform: skew(8deg, -8deg);
+  right: -142px;
+  background-image: linear-gradient(30deg, #e1a100 17%, #ffb700 82%);
+  box-shadow: -11px 19px 35px 0px rgba(255, 183, 0, 0.4);
+  padding: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 25px;
+}
+.banner span {
+  font-family: "SuisseIntl Light Italic";
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 200;
+  font-style: italic;
+  text-transform: uppercase;
+  /*letter-spacing: 0.1em;*/
+  letter-spacing: 3px;
+  text-shadow: -2px 3px 5px rgba(112, 83, 11, 0.23);
+  text-shadow: -1.5px 2.598px 5px rgba(112, 83, 11, 0.24);
+}
+.best {
+  font-weight: 800 !important;
+}
+.ls-small {
+  letter-spacing: -1.4px;
+}
+
+.cta {
+  padding: 4.5vh 70px;
+  background-color: #ffffff;
+  box-shadow: 0px 15px 54px 0px rgba(117, 146, 173, 0.25);
+  border-radius: 80px;
+  max-width: 932px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-left: -70px;
+}
+
+.cta:after {
+  width: 500px;
+  height: 455px;
+  content: "";
+  background: url(/assets/img/catalog.png) no-repeat top;
+  position: absolute;
+  top: 57%;
+  right: -20px;
+  background-size: cover;
+}
+.cta .row {
+  gap: 96px;
+}
+.cta h3 {
+  font-family: "Suisse Intl Light";
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 300;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 43px;
+}
+.cta h3 b {
+  font-family: "Suisse Intl Black";
+  font-weight: 700;
+}
+.col {
+  width: 50%;
+}
+.btn {
+  height: 73px;
+  background-image: linear-gradient(30deg, #e1a100 31%, #ffb700 68%);
+  box-shadow: 0px 22px 35px 0px rgba(255, 183, 0, 0.4);
+  border-radius: 34.800000000000004px;
+  font-family: "Suisse Intl";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 3px 5px rgba(159, 117, 10, 0.28);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.btn:active {
+  bottom: -1px;
+  right: -1px;
+}
+.cta_list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+.cta_list li {
+  position: relative;
+  font-family: "Suisse Intl Light";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #585858;
+  padding-left: 30px;
+  margin-bottom: 7px;
+}
+.cta_list li:before {
+  width: 10px;
+  height: 10px;
+  opacity: 0.3;
+  border: 2px solid #ffb700;
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7px);
+}
+.update {
+  opacity: 0.5;
+  font-family: "Suisse Intl RegularItalic";
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-style: italic;
+  color: #074a86;
+  margin-top: 35px;
+}
+.update b {
+  font-family: "Suisse Intl BoldItalic";
+  font-weight: 600;
+}
+
+.footer_menu {
+  display: flex;
+  margin-left: auto;
+  gap: 46px;
+  padding: 24px 64px;
+}
+.footer_link-silver {
+  opacity: 0.5;
+  font-family: "Suisse Intl Light";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #585858;
+  text-underline-offset: 6px;
+}
+
+.footer_link-black {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: "Suisse Intl Light";
+  color: #585858;
+}
+#popup {
+  position: relative;
+  max-width: 666px;
+  box-sizing: border-box;
+  height: 716px;
+  margin-top: -2%;
+  box-shadow: 0px 15px 54px 0px rgba(117, 146, 173, 0.25);
+  border-radius: 30px;
+  margin-right: -31%;
+  padding: 0;
+}
+#popup:before {
+  content: "";
+  width: 1260px;
+  height: 863px;
+  position: absolute;
+  top: 0;
+  left: -122%;
+  background: url(/assets//img/catalog.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+.popup_wrapper {
+  border-radius: 30px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 90px 60px;
+  border-radius: 30px;
+}
+#popup h3 {
+  font-family: "Suisse Intl Light";
+  font-size: 43.5px;
+  line-height: 53px;
+  font-weight: 300;
+  color: #585858;
+  margin-top: 0;
+  margin-bottom: 49px;
+  text-align: center;
+}
+#popup h3 b {
+  font-family: "Suisse Intl Black";
+  font-weight: 600;
+}
+
+#phone {
+  width: 100%;
+  height: 110px;
+  border: 1px solid #ffc000;
+  border-radius: 54.4px;
+  padding-left: 30%;
+  font-family: "Suisse Intl Light";
+  font-size: 31.7px;
+  line-height: 109px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+  background-image: url(/assets/img/phoneicon.png);
+  background-repeat: no-repeat;
+  background-position: 20% 35px;
+  margin-bottom: 26px;
+}
+#phone::placeholder {
+}
+.btn-big {
+  height: 110px;
+  font-family: "Suisse Intl";
+  font-size: 29.7px;
+  line-height: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 3px 5px rgba(159, 117, 10, 0.28);
+  border-radius: 54.4px;
+}
+#popup .btn-big {
+  margin-bottom: 48px;
+}
+.popup_agreement {
+  font-family: "Suisse Intl Light";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #585858;
+  padding-left: 60px;
+  display: block;
+  position: relative;
+}
+.popup_agreement a:visited {
+  color: #585858;
+}
+.fancybox__slide {
+  overflow: hidden !important;
+}
+.popup_agreement a {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: #585858;
+}
+.popup_agreement-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.styled-checkbox {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border: 1px solid #ffbe00;
+  border-radius: 2px;
+  position: absolute;
+  left: 30px;
+  top: 3px;
+}
+.popup_agreement-checkbox:checked + span:after {
+  content: "\2713";
+  position: absolute;
+  left: 1px;
+  top: -4px;
+  font-size: 18px;
+  opacity: 1;
+  color: #31354f;
+}
+
+.fancybox__backdrop {
+  background: linear-gradient(
+    30deg,
+    rgba(172, 203, 238, 0.8) 16%,
+    rgba(231, 240, 253, 0.8) 83%
+  ) !important;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header {
+  padding-top: 25px;
+  margin-top: auto;
+}
+.content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.main_title {
+  margin: 0 !important;
+}
