@@ -116,6 +116,16 @@
 
 		});
 	</script>
+	<script>
+    navigator.geolocation.getCurrentPosition(position => {
+        const { latitude, longitude } = position.coords;
+        console.log(latitude, longitude);
+      })
+
+      // Записываем в переменные latitude и longitude
+      // координаты пользователя
+
+  </script>
 </body>
 
 </html>
